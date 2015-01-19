@@ -1,0 +1,35 @@
+{
+  "name": "Review",
+  "base": "PersistedModel",
+  "properties": {
+    "star": {
+      "type": "number",
+      "required": true
+    },
+    "review": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "coffeeShop": {
+      "type": "belongsTo",
+      "model": "CoffeeShop",
+      "foreignKey": "review"
+    },
+    "customer": {
+      "type": "belongsTo",
+      "model": "Customer",
+      "foreignKey": "review"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": []
+}

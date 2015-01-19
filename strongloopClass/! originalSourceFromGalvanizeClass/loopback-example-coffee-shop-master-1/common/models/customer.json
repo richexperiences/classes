@@ -1,0 +1,27 @@
+{
+  "name": "Customer",
+  "base": "User",
+  "properties": {
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "password": {
+      "type": "string",
+      "required": true
+    },
+    "username": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "reviews": {
+      "type": "hasMany",
+      "model": "Review",
+      "foreignKey": "customer"
+    }
+  },
+  "acls": [],
+  "methods": []
+}

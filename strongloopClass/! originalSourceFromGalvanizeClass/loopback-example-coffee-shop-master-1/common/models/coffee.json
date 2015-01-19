@@ -1,0 +1,21 @@
+{
+  "name": "Coffee",
+  "plural": "Coffees",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "properties": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "RoastType": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

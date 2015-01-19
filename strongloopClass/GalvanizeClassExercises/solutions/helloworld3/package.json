@@ -1,0 +1,16 @@
+{
+	"name": "helloworld",
+	"version": "0.0.1-a",
+	"description": "hello world",
+	"main": "./helloworld3.js",
+	"keywords": [
+		"hello",
+		"world"
+	],
+	"dependencies": {
+		"asynquence": "~0.5.4-a",
+		"asynquence-contrib": "~0.7.0-c"
+	},
+	"author": "Who am I?",
+	"license": "MIT"
+}

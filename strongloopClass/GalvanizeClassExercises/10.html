@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>10.html</title>
+<script src="jquery.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+
+</head>
+<body>
+<h1>10.html</h1>
+<p id="hello"></p>
+
+<hr>
+
+<p>
+<input id="msgtobroadcast"> <input type="button" id="dobroadcast" value="send">
+</p>
+<p id="broadcast"></p>
+
+
+<script>
+var socket = io("/");
+
+function hello(msg) {
+	$("#hello").text(msg);
+}
+
+function broadcast(msg) {
+	$("#broadcast").append(msg + "<br>");
+}
+
+$("#dobroadcast").click(function(evt){
+	var $inp = $("#msgtobroadcast");
+	socket.emit("msg",$inp.val());
+	$inp.val("");
+});
+
+socket.on("hello",hello);
+socket.on("broadcast",broadcast);
+
+</script>
+
+</body>
+</html>

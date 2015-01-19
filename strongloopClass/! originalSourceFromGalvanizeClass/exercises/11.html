@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>11.html</title>
+<style>
+#spy_marker { position:absolute; background-color:blue; width:4px; height:4px; left:0px; top:0px; display:none; }
+</style>
+<script src="jquery.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+
+</head>
+<body>
+<h1>11.html</h1>
+<p id="hello"></p>
+<div id="spy_marker"></div>
+
+<hr>
+
+<p>
+<input id="msgtobroadcast"> <input type="button" id="dobroadcast" value="send">
+</p>
+<p id="broadcast"></p>
+
+
+<script>
+var socket = io("/");
+var $spy_marker = $("#spy_marker");
+
+function hello(msg) {
+	$("#hello").text(msg);
+}
+
+function broadcast(msg) {
+	$("#broadcast").append(msg + "<br>");
+}
+
+function spy(move) {
+	$spy_marker.show().css({
+		left: (move.x - 2) + "px",
+		top: (move.y - 2) + "px"
+	});
+}
+
+$(document).bind("mousemove",function(evt){
+	// evt.pageX, evt.pageY
+});
+
+$("#dobroadcast").click(function(evt){
+	var $inp = $("#msgtobroadcast");
+	socket.emit("msg",$inp.val());
+	$inp.val("");
+});
+
+socket.on("hello",hello);
+socket.on("broadcast",broadcast);
+
+</script>
+
+</body>
+</html>

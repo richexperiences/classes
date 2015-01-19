@@ -1,0 +1,237 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'strongloop' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose cache add [ 'strongloop', null ]
+5 verbose cache add name=undefined spec="strongloop" args=["strongloop",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'strongloop',
+6 verbose parsed url   path: 'strongloop',
+6 verbose parsed url   href: 'strongloop' }
+7 silly lockFile 89a5b0e6-strongloop strongloop
+8 verbose lock strongloop /Users/rich/.npm/89a5b0e6-strongloop.lock
+9 silly lockFile 89a5b0e6-strongloop strongloop
+10 silly lockFile 89a5b0e6-strongloop strongloop
+11 verbose addNamed [ 'strongloop', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 9938bed3-strongloop strongloop@
+14 verbose lock strongloop@ /Users/rich/.npm/9938bed3-strongloop.lock
+15 silly addNameRange { name: 'strongloop', range: '*', hasData: false }
+16 verbose request where is /strongloop
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 7a6edb365dbac8e4
+19 verbose url raw /strongloop
+20 verbose url resolving [ 'https://registry.npmjs.org/', './strongloop' ]
+21 verbose url resolved https://registry.npmjs.org/strongloop
+22 verbose request where is https://registry.npmjs.org/strongloop
+23 info trying registry request attempt 1 at 12:02:07
+24 verbose etag "MKOY97GEW1U8B5LLG96THLPM"
+25 http GET https://registry.npmjs.org/strongloop
+26 http 304 https://registry.npmjs.org/strongloop
+27 silly registry.get cb [ 304,
+27 silly registry.get   { date: 'Thu, 06 Nov 2014 19:02:07 GMT',
+27 silly registry.get     server: 'Apache',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     'last-modified': 'Thu, 06 Nov 2014 19:02:07 GMT',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     etag: '"MKOY97GEW1U8B5LLG96THLPM"',
+27 silly registry.get     age: '56',
+27 silly registry.get     'x-served-by': 'cache-sjc3130-SJC',
+27 silly registry.get     'x-cache': 'HIT',
+27 silly registry.get     'x-cache-hits': '1',
+27 silly registry.get     'x-timer': 'S1415300527.697714,VS0,VE0',
+27 silly registry.get     vary: 'Accept',
+27 silly registry.get     'content-length': '0',
+27 silly registry.get     'keep-alive': 'timeout=10, max=50',
+27 silly registry.get     connection: 'Keep-Alive' } ]
+28 verbose etag https://registry.npmjs.org/strongloop from cache
+29 silly addNameRange number 2 { name: 'strongloop', range: '*', hasData: true }
+30 silly addNameRange versions [ 'strongloop',
+30 silly addNameRange   [ '2.0.0-beta1',
+30 silly addNameRange     '2.0.0-beta2',
+30 silly addNameRange     '2.0.0-beta3',
+30 silly addNameRange     '2.0.0-beta4',
+30 silly addNameRange     '2.0.0-beta5',
+30 silly addNameRange     '2.0.0-beta6',
+30 silly addNameRange     '2.0.0-beta7',
+30 silly addNameRange     '2.0.0-beta8',
+30 silly addNameRange     '2.0.0',
+30 silly addNameRange     '2.7.1',
+30 silly addNameRange     '2.7.2',
+30 silly addNameRange     '2.8.0',
+30 silly addNameRange     '2.9.0',
+30 silly addNameRange     '2.9.1',
+30 silly addNameRange     '2.9.2' ] ]
+31 verbose addNamed [ 'strongloop', '2.9.2' ]
+32 verbose addNamed [ '2.9.2', '2.9.2' ]
+33 silly lockFile 34218919-strongloop-2-9-2 strongloop@2.9.2
+34 verbose lock strongloop@2.9.2 /Users/rich/.npm/34218919-strongloop-2-9-2.lock
+35 silly lockFile 34218919-strongloop-2-9-2 strongloop@2.9.2
+36 silly lockFile 34218919-strongloop-2-9-2 strongloop@2.9.2
+37 silly lockFile 9938bed3-strongloop strongloop@
+38 silly lockFile 9938bed3-strongloop strongloop@
+39 silly resolved [ { name: 'strongloop',
+39 silly resolved     version: '2.9.2',
+39 silly resolved     description: 'StrongLoop Command Line Tools',
+39 silly resolved     homepage: 'http://www.strongloop.com',
+39 silly resolved     keywords:
+39 silly resolved      [ 'Backend',
+39 silly resolved        'LoopBack',
+39 silly resolved        'Mobile',
+39 silly resolved        'Platform',
+39 silly resolved        'StrongLoop',
+39 silly resolved        'alerts',
+39 silly resolved        'analytics',
+39 silly resolved        'agent',
+39 silly resolved        'apm',
+39 silly resolved        'build',
+39 silly resolved        'bundle',
+39 silly resolved        'cluster',
+39 silly resolved        'config',
+39 silly resolved        'dependencies',
+39 silly resolved        'deploy',
+39 silly resolved        'devops',
+39 silly resolved        'event loop',
+39 silly resolved        'forever',
+39 silly resolved        'git',
+39 silly resolved        'heap',
+39 silly resolved        'heroku',
+39 silly resolved        'logging',
+39 silly resolved        'mBaaS',
+39 silly resolved        'manager',
+39 silly resolved        'master',
+39 silly resolved        'memory',
+39 silly resolved        'metrics',
+39 silly resolved        'monitoring',
+39 silly resolved        'nodeops',
+39 silly resolved        'npm',
+39 silly resolved        'npmrc',
+39 silly resolved        'openshift',
+39 silly resolved        'ops',
+39 silly resolved        'performance',
+39 silly resolved        'pm',
+39 silly resolved        'process',
+39 silly resolved        'profiler',
+39 silly resolved        'profiling',
+39 silly resolved        'registry',
+39 silly resolved        'response',
+39 silly resolved        'runner',
+39 silly resolved        'service',
+39 silly resolved        'slc',
+39 silly resolved        'slowest functions',
+39 silly resolved        'streams',
+39 silly resolved        'strong-agent',
+39 silly resolved        'strong-cli',
+39 silly resolved        'strong-cluster-control',
+39 silly resolved        'strong-pm',
+39 silly resolved        'strong-supervisor',
+39 silly resolved        'strongloop',
+39 silly resolved        'strongops',
+39 silly resolved        'supervisor',
+39 silly resolved        'switch',
+39 silly resolved        'time',
+39 silly resolved        'upstart' ],
+39 silly resolved     main: 'index.js',
+39 silly resolved     repository:
+39 silly resolved      { type: 'git',
+39 silly resolved        url: 'git://github.com/strongloop/strongloop.git' },
+39 silly resolved     author: { name: 'engineering@strongloop.com' },
+39 silly resolved     license:
+39 silly resolved      { name: 'Dual Artistic/StrongLoop',
+39 silly resolved        url: 'https://github.com/strongloop/strongloop/blob/master/LICENSE.md' },
+39 silly resolved     readmeFilename: 'README.md',
+39 silly resolved     bin:
+39 silly resolved      { slc: './bin/slc',
+39 silly resolved        'lb-ng': './node_modules/loopback-sdk-angular-cli/bin/lb-ng',
+39 silly resolved        'lb-ng-doc': './node_modules/loopback-sdk-angular-cli/bin/lb-ng-doc' },
+39 silly resolved     scripts:
+39 silly resolved      { lint: 'jshint --exclude test/sandbox *.js lib test',
+39 silly resolved        test: 'mocha --reporter spec',
+39 silly resolved        prepublish: './prepublish.sh' },
+39 silly resolved     dependencies:
+39 silly resolved      { async: '~0.2.9',
+39 silly resolved        colors: '~0.6.1',
+39 silly resolved        cpr: '~0.1.1',
+39 silly resolved        debug: '~0.7.2',
+39 silly resolved        'fs.extra': '~1.2.1',
+39 silly resolved        'generator-loopback': '1.x',
+39 silly resolved        inflection: '~1.2.6',
+39 silly resolved        ini: '~1.1.0',
+39 silly resolved        is2: '~0.0.3',
+39 silly resolved        'json-file-plus': '~1.0.0',
+39 silly resolved        'loopback-sdk-angular-cli': '1.x',
+39 silly resolved        'loopback-workspace': '~2.6.0',
+39 silly resolved        mkdirp: '~0.3.5',
+39 silly resolved        'node-inspector': '~0.7.0',
+39 silly resolved        'nodefly-register': '~0.3.2',
+39 silly resolved        nopt: '~3.0.1',
+39 silly resolved        npm: '~1.4.6',
+39 silly resolved        optimist: '~0.5.0',
+39 silly resolved        prompt: '~0.2.11',
+39 silly resolved        read: '~1.0.5',
+39 silly resolved        'strong-agent': '^1.0.0',
+39 silly resolved        'strong-build': '^1.0.0',
+39 silly resolved        'strong-deploy': '^1.0.0',
+39 silly resolved        'strong-pm': '^1.0.0',
+39 silly resolved        'strong-registry': '^1.0.0',
+39 silly resolved        'strong-supervisor': '^1.0.0',
+39 silly resolved        which: '~1.0.5' },
+39 silly resolved     devDependencies:
+39 silly resolved      { jshint: '~2.1.10',
+39 silly resolved        mocha: '~1.12.0',
+39 silly resolved        chai: 'latest',
+39 silly resolved        nexpect: 'git+https://github.com/strongloop/nexpect',
+39 silly resolved        'strong-install': '~0.6.3',
+39 silly resolved        'chai-fs': '0.0.3',
+39 silly resolved        'chai-json-schema': '~1.0.7' },
+39 silly resolved     readme: '# slc -- StrongLoop Controller\n\n`slc` is a command-line tool for development and control of your Node\napplication.\n\n## Install\n\n    npm install -g strongloop\n\n## Documentation\n\nUse the `--help` command to get basic comand help:\n\n    slc --help\n\nFor more documentation, see [Getting started with StrongLoop Controller]\n(http://docs.strongloop.com/display/SLC/Getting+started+with+StrongLoop+Controller).\n',
+39 silly resolved     bugs: { url: 'https://github.com/strongloop/strongloop/issues' },
+39 silly resolved     bundleDependencies: [ 'nodefly-register' ],
+39 silly resolved     _id: 'strongloop@2.9.2',
+39 silly resolved     _from: 'strongloop@' } ]
+40 info install strongloop@2.9.2 into /usr/local/lib
+41 info installOne strongloop@2.9.2
+42 verbose lib/node_modules/strongloop unbuild
+43 verbose tar unpack /Users/rich/.npm/strongloop/2.9.2/package.tgz
+44 silly lockFile 9f5d09b4-ocal-lib-node-modules-strongloop tar:///usr/local/lib/node_modules/strongloop
+45 verbose lock tar:///usr/local/lib/node_modules/strongloop /Users/rich/.npm/9f5d09b4-ocal-lib-node-modules-strongloop.lock
+46 silly lockFile 14833977-npm-strongloop-2-9-2-package-tgz tar:///Users/rich/.npm/strongloop/2.9.2/package.tgz
+47 verbose lock tar:///Users/rich/.npm/strongloop/2.9.2/package.tgz /Users/rich/.npm/14833977-npm-strongloop-2-9-2-package-tgz.lock
+48 silly gunzTarPerm modes [ '755', '644' ]
+49 error Error: EACCES, mkdir '/usr/local/lib/node_modules/strongloop'
+49 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/strongloop']
+49 error   errno: 3,
+49 error   code: 'EACCES',
+49 error   path: '/usr/local/lib/node_modules/strongloop',
+49 error   fstream_type: 'Directory',
+49 error   fstream_path: '/usr/local/lib/node_modules/strongloop',
+49 error   fstream_class: 'DirWriter',
+49 error   fstream_stack:
+49 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+49 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+49 error      'Object.oncomplete (fs.js:107:15)' ] }
+50 error Please try running this command again as root/Administrator.
+51 error System Darwin 14.0.0
+52 error command "node" "/usr/local/bin/npm" "install" "-g" "strongloop"
+53 error cwd /Users/rich/Desktop/node/exercises
+54 error node -v v0.10.33
+55 error npm -v 1.4.28
+56 error path /usr/local/lib/node_modules/strongloop
+57 error fstream_path /usr/local/lib/node_modules/strongloop
+58 error fstream_type Directory
+59 error fstream_class DirWriter
+60 error code EACCES
+61 error errno 3
+62 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/strongloop'
+63 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+63 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+63 error fstream_stack Object.oncomplete (fs.js:107:15)
+64 verbose exit [ 3, true ]
